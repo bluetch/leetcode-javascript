@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+  </head>
+  <body>
+    <h1>LeetCode Playground</h1>
+    <h3>13. roman to integer</h3>
+    <ul>
+      <li>I: 1</li>
+      <li>V: 5</li>
+      <li>X: 10</li>
+      <li>L: 50</li>
+      <li>C: 100</li>
+      <li>D: 500</li>
+      <li>M: 1000</li>
+    </ul>
+    <p>Input:
+      <input type="text" id="val13"></p>
+    <button onclick="q13('1')">Run Code</button>
+    <button onclick="q13('2')">Run Code</button>
+    <p>Output:
+      <span id="ans13"></span>
+    </p>
+    <hr>
+    <h3>14. longest common prefix</h3>
+    <p>Input:
+      <input type="text" id="val14"></p>
+    <button onclick="q14()">Run Code</button>
+    <p>Output:
+      <span id="ans14"></span>
+    </p>
+    <hr>
+    <script src="./13-roman-to-integer.js"></script>
+    <script src="./14-longest-common-prefix.js"></script>
+    <script>
+      function q13(solution) {
+        let val = document.getElementById('val13').value;
+        switch (solution) {
+          case "1":
+            document.getElementById('ans13').innerHTML = romanToInt(val);
+            break;
+          case "2":
+            document.getElementById('ans13').innerHTML = romanToInt2(val);
+            break;
+        }
+      }
+
+      function q14() {
+        let val = document.getElementById('val14').value;
+        document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
+      }
+    </script>
+  </body>
+</html>
