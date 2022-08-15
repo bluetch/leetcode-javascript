@@ -3,7 +3,7 @@ My solution for [LeetCode](https://leetcode.com/) problems
 
 ## Algorithms
 
-|   #   |      Title    |  Solution  | Difficulty |
+|   #   |     Problem   |  Solution  | Difficulty |
 |:-----:|:--------------|:----------:|:-----------|
 |  1   | [Two Sum](https://leetcode.com/problems/two-sum)| [JavaScript](./algorithms/1-two-sum.js) | Easy |
 |  2   | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [JavaScript](./algorithms/2-add-two-numbers.js) | Medium |
