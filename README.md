@@ -12,6 +12,7 @@ My solution for [LeetCode](https://leetcode.com/) problems
 |  13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [JavaScript](./algorithms/13-roman-to-integer.js) | Easy |
 |  14  | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [JavaScript](./algorithms/14-longest-common-prefix.js) | Easy |
 |  20  | [Valid Parenttheses](https://leetcode.com/problems/valid-parentheses/) | [JavaScript](./algorithms/20-valid-parentheses.js) | Easy |
+|  21  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [JavaScript](./algorithms/21-merge-two-sorted-lists.js) | Easy |
 
 
 ## Reference

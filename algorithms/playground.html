@@ -34,8 +34,19 @@
       <span id="ans14"></span>
     </p>
     <hr>
+    <h3>21. mergeTwoLists</h3>
+    <p>Input:
+      <input type="text"  id="input21a">
+      <input type="text"  id="input21b">
+    </p>
+    <button onclick="q21()">Run Code</button>
+    <p>Output:
+      <span id="ans21"></span>
+    </p>
+    <hr>
     <script src="./13-roman-to-integer.js"></script>
     <script src="./14-longest-common-prefix.js"></script>
+    <script src="./21-merge-two-sorted-lists.js"></script>
     <script>
       function q13(solution) {
         let val = document.getElementById('val13').value;
@@ -53,6 +64,18 @@
         let val = document.getElementById('val14').value;
         document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
       }
+
+      function q21() {
+        let input1 = document.getElementById('input21a').value;
+        let input2 = document.getElementById('input21b').value;
+        console.log(mergeTwoLists([1,2,4], [1,3,4]));
+        document.getElementById('ans21').innerHTML = mergeTwoLists([1,2,4], [1,3,4]);
+      }
+
+      // let arr1 = [1,2,4];
+      // let arr2 = [1,3,4];
+      // let result = [...arr1, ...arr2].sort((a, b) => a - b);
+      // console.log(result);
     </script>
   </body>
 </html>
