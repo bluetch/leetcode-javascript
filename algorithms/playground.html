@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground</title>
     <style>
-      body{
+      body {
         margin: 0;
       }
-      h1{
+      h1 {
         margin-bottom: 64px;
       }
-      hr{
+      hr {
         margin: 64px 0;
         border-color: #fff;
       }
@@ -121,11 +121,24 @@
       <hr>
       <h3>27. Remove element</h3>
       <p>Input:
-        <input type="text" id="input27">
+                        Array<input type="text" id="input27a">
+        val
+        <input type="text" id="input27b">
       </p>
       <button onclick="q27()">Run Code</button>
       <p>Output:
         <span id="ans27"></span>
+      </p>
+      <hr>
+      <h3>28. Implement strStr()
+      </h3>
+      <p>Input:
+                        haystack<input type="text" id="input27a">
+        neddle<input type="text" id="input27b">
+      </p>
+      <button onclick="q28()">Run Code</button>
+      <p>Output:
+        <span id="ans28"></span>
       </p>
       <hr>
     </div>
@@ -139,6 +152,7 @@
     <script src="./21-merge-two-sorted-lists.js"></script>
     <script src="./26-remove-duplicates-from-sorted-array.js"></script>
     <script src="./27-remove-element.js"></script>
+    <script src="./28-implement-strstr.js"></script>
     <script>
 
       const q1 = () => {
@@ -207,8 +221,15 @@
       }
 
       const q27 = () => {
-        let val = document.getElementById('input27').value;
-        document.getElementById('ans27').innerHTML = removeElement([3, 2, 2, 3], 3);
+        let nums = document.getElementById('input27a').value.trim().split(",");
+        let val = document.getElementById('input27b').value;
+        document.getElementById('ans27').innerHTML = removeElement(nums, val);
+      }
+
+      const q28 = () => {
+        let haystack = document.getElementById('input28a').value;
+        let needle = document.getElementById('input28b').value;
+        document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
       }
     </script>
   </body>
