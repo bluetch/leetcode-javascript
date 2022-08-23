@@ -8,7 +8,7 @@
  * @return {number[]}
  */
 var twoSum = function (nums, target) {
-  // Hash Map ver. 
+  // Solution: Hash Map ver. 
   // 將每一個數字與target的差值加入map儲存，新的數字若相符即回傳
   var map = {};
   for (var i = 0; i < nums.length; i++) {
@@ -19,15 +19,16 @@ var twoSum = function (nums, target) {
   }
 };
 
-const twoSum = (nums, target) => {
-  let storage = {};
+// Solution 2: 
+// const twoSum = (nums, target) => {
+//   let storage = {};
 
-  for (let [index, num] of nums.entries()) {
-    if (storage[num] !== undefined) return [storage[num], index];
-    storage[target - num] = index;
-  }
+//   for (let [index, num] of nums.entries()) {
+//     if (storage[num] !== undefined) return [storage[num], index];
+//     storage[target - num] = index;
+//   }
 
-}
+// }
 
 // Example
 // [2, 7, 11, 15]
