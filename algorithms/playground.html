@@ -121,7 +121,7 @@
       <hr>
       <h3>27. Remove element</h3>
       <p>Input:
-                        Array<input type="text" id="input27a">
+                                Array<input type="text" id="input27a">
         val
         <input type="text" id="input27b">
       </p>
@@ -133,7 +133,7 @@
       <h3>28. Implement strStr()
       </h3>
       <p>Input:
-                        haystack<input type="text" id="input27a">
+                                haystack<input type="text" id="input27a">
         neddle<input type="text" id="input27b">
       </p>
       <button onclick="q28()">Run Code</button>
@@ -231,6 +231,20 @@
         let needle = document.getElementById('input28b').value;
         document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
       }
+
+      function fs(n) {
+        if (n == 0) {
+          return 0;
+        } else if (n == 1) {
+          return 1;
+        } else {
+          return fs(n - 1) + fs(n - 2);
+        }
+      }
+      for(let i = 0; i <15; i++){
+        console.log(fs(i));
+      }
+      
     </script>
   </body>
 </html>

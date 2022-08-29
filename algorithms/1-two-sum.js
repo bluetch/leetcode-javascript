@@ -1,5 +1,3 @@
-
-
 /**
  * Problem: https://leetcode.com/problems/two-sum/
  * Difficulty: Easy
@@ -7,7 +5,7 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function (nums, target) {
+const twoSum = (nums, target) => {
   // Solution: Hash Map ver. 
   // 將每一個數字與target的差值加入map儲存，新的數字若相符即回傳
   var map = {};
