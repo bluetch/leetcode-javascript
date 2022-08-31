@@ -121,7 +121,7 @@
       <hr>
       <h3>27. Remove element</h3>
       <p>Input:
-                                                                                                                                                                                                                                                                                                                                                                                                        Array<input type="text" id="input27a">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        Array<input type="text" id="input27a">
         val
         <input type="text" id="input27b">
       </p>
@@ -177,6 +177,17 @@
         <span id="practice-same-frequency-answer"></span>
       </p>
       <hr>
+      <h3>Practice: Average Pair
+      </h3>
+      <p>Input:
+        <label for="">Array</label><input type="text" id="practice-average-pair-a" value="-11,0,1,2,3,9,14,17,21">
+        <label for="">average</label><input type="text" id="practice-average-pair-b" value="1.5">
+      </p>
+      <button onclick="practiceAveragePair()">Run Code</button>
+      <p>Output:
+        <span id="practice-average-pair-answer"></span>
+      </p>
+      <hr>
     </div>
     <script src="./1-two-sum.js"></script>
     <script src="./2-add-two-number.js"></script>
@@ -192,6 +203,7 @@
     <script src="./practice-binary-search.js"></script>
     <script src="./practice-intersection.js"></script>
     <script src="./practice-same-frequency.js"></script>
+    <script src="./practice-average-pair.js"></script>
     <script>
 
       const q1 = () => {
@@ -288,6 +300,13 @@
         let str1 = document.getElementById("practice-same-frequency-a").value;
         let str2 = document.getElementById("practice-same-frequency-b").value;
         document.getElementById('practice-same-frequency-answer').innerHTML = sameFrequency(str1, str2);
+      }
+
+      const practiceAveragePair = () => {
+        let arr = document.getElementById("practice-average-pair-a").value.trim().split(",");
+        arr = arr.map(Number);
+        let num = document.getElementById("practice-average-pair-b").value;
+        document.getElementById('practice-average-pair-answer').innerHTML = averagePair(arr, num);
       }
     </script>
   </body>
