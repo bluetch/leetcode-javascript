@@ -121,7 +121,7 @@
       <hr>
       <h3>27. Remove element</h3>
       <p>Input:
-                                Array<input type="text" id="input27a">
+                                                                                                                Array<input type="text" id="input27a">
         val
         <input type="text" id="input27b">
       </p>
@@ -133,7 +133,7 @@
       <h3>28. Implement strStr()
       </h3>
       <p>Input:
-                                haystack<input type="text" id="input27a">
+                                                                                                                haystack<input type="text" id="input27a">
         neddle<input type="text" id="input27b">
       </p>
       <button onclick="q28()">Run Code</button>
@@ -153,6 +153,7 @@
     <script src="./26-remove-duplicates-from-sorted-array.js"></script>
     <script src="./27-remove-element.js"></script>
     <script src="./28-implement-strstr.js"></script>
+    <script src="./binary-search.js"></script>
     <script>
 
       const q1 = () => {
@@ -232,19 +233,35 @@
         document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
       }
 
-      function fs(n) {
-        if (n == 0) {
-          return 0;
-        } else if (n == 1) {
-          return 1;
-        } else {
-          return fs(n - 1) + fs(n - 2);
-        }
-      }
-      for(let i = 0; i <15; i++){
-        console.log(fs(i));
-      }
-      
+      let arr = [
+        2,
+        5,
+        8,
+        12,
+        15,
+        17,
+        19,
+        20,
+        22,
+        35,
+        40,
+        44,
+        45,
+        55,
+        60,
+        66,
+        68,
+        71,
+        73,
+        75,
+        77,
+        80,
+        83,
+        86,
+        89,
+        90
+      ];
+      binarySearch(arr, 5);
     </script>
   </body>
 </html>
