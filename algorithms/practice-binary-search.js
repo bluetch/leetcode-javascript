@@ -1,3 +1,8 @@
+/*
+Binary search is a search algorithm that finds the position of a target value within a sorted array.
+More efficient thatn linear search, but only works with sorted data set.
+*/
+
 const binarySearch = (arr, num) => {
   // arr.sort((a, b) => (a - b));
   let min = 0,

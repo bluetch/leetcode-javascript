@@ -10,10 +10,14 @@ const twoSum = (nums, target) => {
   // 將每一個數字與target的差值加入map儲存，新的數字若相符即回傳
   var map = {};
   for (var i = 0; i < nums.length; i++) {
-    if (map[nums[i]] || map[nums[i]] === 0)
+    if (map[nums[i]] || map[nums[i]] === 0) {
+      console.log([map[nums[i]], i]);
       return [map[nums[i]], i];
-    else
+    }
+    else {
+      console.log([map[nums[i]], i]);
       map[target - nums[i]] = i;
+    }
   }
 };
 
