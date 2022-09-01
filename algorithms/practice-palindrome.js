@@ -8,7 +8,7 @@ EX:
   isPalindrome("asdfopjaseiopfjwqepfma") false
 */
 
-const palindrome = (str) => {
+const isPalindromeString = (str) => {
   let left = 0, right = str.length - 1;
   while (left <= right) {
     console.log(str[left], str[right]);

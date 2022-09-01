@@ -30,7 +30,7 @@
       <p>
         <input type="text" id="input1a" value="2,7,11,15">
         <input type="text" id="input1b" value="9">
-        <button onclick="q1()">Run Code</button>
+        <button onclick="leetcode1()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans1"></span>
@@ -40,7 +40,7 @@
       <p>
         <input type="text" id="input2a">
         <input type="text" id="input2b">
-        <button onclick="q2()">Run Code</button>
+        <button onclick="leetcode2()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans2"></span>
@@ -49,7 +49,7 @@
       <h3>5. Longest Palindromic Substring</h3>
       <p>
         <input type="text" id="input5" value="tacocat">
-        <button onclick="q5()">Run Code</button>
+        <button onclick="leetcode5()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans5"></span>
@@ -58,7 +58,7 @@
       <h3>7. Reverse Interger</h3>
       <p>
         <input type="text" id="input7">
-        <button onclick="q7()">Run Code</button>
+        <button onclick="leetcode7()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans7"></span>
@@ -66,8 +66,8 @@
       <hr>
       <h3>9. Palindrome Number</h3>
       <p>
-        <input type="text" id="input9">
-        <button onclick="q9()">Run Code</button>
+        <input type="text" id="input9" value="121">
+        <button onclick="leetcode9()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans9"></span>
@@ -84,9 +84,8 @@
         <li>M: 1000</li>
       </ul>
       <p>
-        <input type="text" id="input13">
-        <button onclick="q13('1')">Run Code</button>
-        <button onclick="q13('2')">Run Code</button>
+        <input type="text" id="input13" value="XVI">
+        <button onclick="leetcode13()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans13"></span>
@@ -95,7 +94,7 @@
       <h3>14. longest common prefix</h3>
       <p>
         <input type="text" id="input14">
-        <button onclick="q14()">Run Code</button>
+        <button onclick="leetcode14()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans14"></span>
@@ -103,9 +102,9 @@
       <hr>
       <h3>21. mergeTwoLists</h3>
       <p>
-        <input type="text" id="input21a">
-        <input type="text" id="input21b">
-        <button onclick="q21()">Run Code</button>
+        <input type="text" id="input21a" value="1,2,4">
+        <input type="text" id="input21b" value="1,3,4">
+        <button onclick="leetcode21()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans21"></span>
@@ -114,7 +113,7 @@
       <h3>26. Remove Duplicates from Sorted Array</h3>
       <p>
         <input type="text" id="input26">
-        <button onclick="q26()">Run Code</button>
+        <button onclick="leetcode26()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans26"></span>
@@ -125,7 +124,7 @@
         <label for="">Array</label><input type="text" id="input27a">
         <label for="">val</label>
         <input type="text" id="input27b">
-        <button onclick="q27()">Run Code</button>
+        <button onclick="leetcode27()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans27"></span>
@@ -136,7 +135,7 @@
       <p>
         <label>haystack</label><input type="text" id="input27a">
         <label for="">neddle</label><input type="text" id="input27b">
-        <button onclick="q28()">Run Code</button>
+        <button onclick="leetcode28()">Run Code</button>
       </p>
       <p>Output:
         <span id="ans28"></span>
@@ -196,15 +195,84 @@
         <span id="practice-palindrome-answer"></span>
       </p>
       <hr>
+      <h3>Practice: subsequence</h3>
+      <p>
+        <label for="">string</label><input type="text" id="practice-subsequence-a" value="hello">
+        <label for="">string</label><input type="text" id="practice-subsequence-b" value="hello Dear">
+        <button onclick="practiceSubsequence()">Run Code</button>
+      </p>
+      <p>Output:
+        <span id="practice-subsequence-answer"></span>
+      </p>
+      <hr>
     </div>
     <script src="./1-two-sum.js"></script>
+    <script>
+      const leetcode1 = () => {
+        const input1 = document.getElementById('input1a').value;
+        const input2 = document.getElementById('input1b').value;
+        const ans = document.getElementById('ans1');
+        ans.innerHTML = twoSum(input1, input2);
+      }
+    </script>
     <script src="./2-add-two-number.js"></script>
+    <script>
+      const leetcode2 = () => {
+        const input1 = document.getElementById('input2a').value;
+        const input2 = document.getElementById('input2b').value;
+        const ans = document.getElementById('ans2');
+        ans.innerHTML = addTwoNumbers(ans);
+      }
+    </script>
     <script src="./5-longest-palindromic-substring.js"></script>
+    <script>
+      const leetcode5 = () => {
+        const input1 = document.getElementById('input5').value;
+        const ans = document.getElementById('ans5');
+        ans.innerHTML = longestCommonPrefix(ans);
+      }
+    </script>
     <script src="./7-reverse-integer.js"></script>
+    <script>
+      const leetcode7 = () => {
+        const input1 = document.getElementById('input7').value;
+        const ans = document.getElementById('ans7');
+        ans.innerHTML = reverseInteger(val);
+      }
+    </script>
     <script src="./9-palindrome-number.js"></script>
+    <script>
+      const leetcode9 = () => {
+        let input1 = document.getElementById('input9').value;
+        input1 = Number(input1);
+        const ans = document.getElementById('ans9');
+        ans.innerHTML = isPalindrome(input1);
+      }
+    </script>
     <script src="./13-roman-to-integer.js"></script>
+    <script>
+      const leetcode13 = (solution) => {
+        let val = document.getElementById('input13').value;
+        document.getElementById('ans13').innerHTML = romanToInt(val);
+      }
+    </script>
     <script src="./14-longest-common-prefix.js"></script>
+    <script>
+      const leetcode14 = () => {
+        let val = document.getElementById('input14').value;
+        document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
+      }
+    </script>
     <script src="./21-merge-two-sorted-lists.js"></script>
+    <script>
+      const leetcode21 = () => {
+        let input1 = document.getElementById('input21a').value;
+        let arr1 = input1.split(",").map(Number);
+        let input2 = document.getElementById('input21b').value;
+        let arr2 = input2.split(",").map(Number);
+        document.getElementById('ans21').innerHTML = mergeTwoLists(arr1, arr2);
+      }
+    </script>
     <script src="./26-remove-duplicates-from-sorted-array.js"></script>
     <script src="./27-remove-element.js"></script>
     <script src="./28-implement-strstr.js"></script>
@@ -213,80 +281,22 @@
     <script src="./practice-same-frequency.js"></script>
     <script src="./practice-average-pair.js"></script>
     <script src="./practice-palindrome.js"></script>
+    <script src="./practice-subsequence.js"></script>
     <script>
 
-      const q1 = () => {
-        const input1 = document.getElementById('input1a').value;
-        const input2 = document.getElementById('input1b').value;
-        const ans = document.getElementById('ans1');
-        ans.innerHTML = twoSum(input1, input2);
-      }
 
-      const q2 = () => {
-        const input1 = document.getElementById('input2a').value;
-        const input2 = document.getElementById('input2b').value;
-        const ans = document.getElementById('ans2');
-        ans.innerHTML = addTwoNumbers(val);
-      }
-
-      const q5 = () => {
-        const input1 = document.getElementById('input5').value;
-        const ans = document.getElementById('ans5');
-        ans.innerHTML = longestCommonPrefix(ans);
-      }
-
-      const q7 = () => {
-        const input1 = document.getElementById('input7').value;
-        const ans = document.getElementById('ans7');
-        ans.innerHTML = reverseInteger(val);
-      }
-
-      const q9 = () => {
-        const input1 = document.getElementById('input9').value;
-        const ans = document.getElementById('ans9');
-        ans.innerHTML = isPalindrome(val);
-      }
-
-      const q13 = (solution) => {
-        let val = document.getElementById('input13').value;
-        switch (solution) {
-          case "1":
-            document.getElementById('ans13').innerHTML = romanToInt(val);
-            break;
-          case "2":
-            document.getElementById('ans13').innerHTML = romanToInt2(val);
-            break;
-        }
-      }
-
-      const q14 = () => {
-        let val = document.getElementById('input14').value;
-        document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
-      }
-
-      const q21 = () => {
-        let input1 = document.getElementById('input21a').value;
-        let input2 = document.getElementById('input21b').value;
-        console.log(mergeTwoLists([
-          1, 2, 4
-        ], [1, 3, 4]));
-        document.getElementById('ans21').innerHTML = mergeTwoLists([
-          1, 2, 4
-        ], [1, 3, 4]);
-      }
-
-      const q26 = () => {
+      const leetcode26 = () => {
         let val = document.getElementById('input26').value;
         document.getElementById('ans26').innerHTML = removeDuplicates(val);
       }
 
-      const q27 = () => {
+      const leetcode27 = () => {
         let nums = document.getElementById('input27a').value.trim().split(",");
         let val = document.getElementById('input27b').value;
         document.getElementById('ans27').innerHTML = removeElement(nums, val);
       }
 
-      const q28 = () => {
+      const leetcode28 = () => {
         let haystack = document.getElementById('input28a').value;
         let needle = document.getElementById('input28b').value;
         document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
@@ -321,7 +331,13 @@
 
       const practicePalindrome = () => {
         let str = document.getElementById("practice-palindrome-a").value;
-        document.getElementById('practice-palindrome-answer').innerHTML = palindrome(str);
+        document.getElementById('practice-palindrome-answer').innerHTML = isPalindromeString(str);
+      }
+
+      const practiceSubsequence = () => {
+        let str1 = document.getElementById("practice-subsequence-a").value;
+        let str2 = document.getElementById("practice-subsequence-b").value;
+        document.getElementById("practice-subsequence-answer").innerHTML = isSubsequence(str1, str2);
       }
     </script>
   </body>
