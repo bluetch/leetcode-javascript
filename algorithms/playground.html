@@ -85,6 +85,7 @@
         }
       </script>
       <hr>
+      <!-- 7. Reverse Interger -->
       <h3>7. Reverse Interger</h3>
       <p>
         <input type="text" id="input7">
@@ -94,6 +95,15 @@
         <span id="ans7"></span>
       </p>
       <hr>
+      <script src="./7-reverse-integer.js"></script>
+      <script>
+        const leetcode7 = () => {
+          const input1 = document.getElementById('input7').value;
+          const ans = document.getElementById('ans7');
+          ans.innerHTML = reverseInteger(val);
+        }
+      </script>
+      <!-- 9. Palindrome Number -->
       <h3>9. Palindrome Number</h3>
       <p>
         <input type="text" id="input9" value="121">
@@ -103,6 +113,16 @@
         <span id="ans9"></span>
       </p>
       <hr>
+      <script src="./9-palindrome-number.js"></script>
+      <script>
+        const leetcode9 = () => {
+          let input1 = document.getElementById('input9').value;
+          input1 = Number(input1);
+          const ans = document.getElementById('ans9');
+          ans.innerHTML = isPalindrome(input1);
+        }
+      </script>
+      <!-- 13. roman to integer -->
       <h3>13. roman to integer</h3>
       <ul>
         <li>I: 1</li>
@@ -121,6 +141,14 @@
         <span id="ans13"></span>
       </p>
       <hr>
+      <script src="./13-roman-to-integer.js"></script>
+      <script>
+        const leetcode13 = (solution) => {
+          let val = document.getElementById('input13').value;
+          document.getElementById('ans13').innerHTML = romanToInt(val);
+        }
+      </script>
+      <!-- 14. longest common prefi -->
       <h3>14. longest common prefix</h3>
       <p>
         <input type="text" id="input14">
@@ -130,7 +158,15 @@
         <span id="ans14"></span>
       </p>
       <hr>
-      <h3>21. mergeTwoLists</h3>
+      <script src="./14-longest-common-prefix.js"></script>
+      <script>
+        const leetcode14 = () => {
+          let val = document.getElementById('input14').value;
+          document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
+        }
+      </script>
+      <!-- 21. merge Two Lists -->
+      <h3>21. merge Two Lists</h3>
       <p>
         <input type="text" id="input21a" value="1,2,4">
         <input type="text" id="input21b" value="1,3,4">
@@ -140,6 +176,17 @@
         <span id="ans21"></span>
       </p>
       <hr>
+      <script src="./21-merge-two-sorted-lists.js"></script>
+      <script>
+        const leetcode21 = () => {
+          let input1 = document.getElementById('input21a').value;
+          let arr1 = input1.split(",").map(Number);
+          let input2 = document.getElementById('input21b').value;
+          let arr2 = input2.split(",").map(Number);
+          document.getElementById('ans21').innerHTML = mergeTwoLists(arr1, arr2);
+        }
+      </script>
+      <!-- 26. Remove Duplicates from Sorted Array -->
       <h3>26. Remove Duplicates from Sorted Array</h3>
       <p>
         <input type="text" id="input26">
@@ -149,6 +196,14 @@
         <span id="ans26"></span>
       </p>
       <hr>
+      <script src="./26-remove-duplicates-from-sorted-array.js"></script>
+      <script>
+        const leetcode26 = () => {
+          let val = document.getElementById('input26').value;
+          document.getElementById('ans26').innerHTML = removeDuplicates(val);
+        }
+      </script>
+      <!-- 27. Remove element -->
       <h3>27. Remove element</h3>
       <p>
         <label for="">Array</label><input type="text" id="input27a">
@@ -160,8 +215,16 @@
         <span id="ans27"></span>
       </p>
       <hr>
-      <h3>28. Implement strStr()
-      </h3>
+      <script src="./27-remove-element.js"></script>
+      <script>
+        const leetcode27 = () => {
+          let nums = document.getElementById('input27a').value.trim().split(",");
+          let val = document.getElementById('input27b').value;
+          document.getElementById('ans27').innerHTML = removeElement(nums, val);
+        }
+      </script>
+      <!-- 28. Implement strStr() -->
+      <h3>28. Implement strStr()</h3>
       <p>
         <label>haystack</label><input type="text" id="input27a">
         <label for="">neddle</label><input type="text" id="input27b">
@@ -171,9 +234,38 @@
         <span id="ans28"></span>
       </p>
       <hr>
+      <script src="./28-implement-strstr.js"></script>
+      <script>
+        const leetcode28 = () => {
+          let haystack = document.getElementById('input28a').value;
+          let needle = document.getElementById('input28b').value;
+          document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
+        }
+      </script>
+      <!-- 35. Search Insert Position -->
+      <h3>35. Search Insert Position</h3>
+      <p>
+        <label>nums</label><input type="text" id="input35a" value="1,3,5,6">
+        <label>target</label><input type="text" id="input35b" value="5">
+        <button onclick="leetcode35()">Run Code</button>
+      </p>
+      <p>Output:
+        <span id="ans35"></span>
+      </p>
+      <hr>
+      <script src="./35-search-insert-position.js"></script>
+      <script>
+        const leetcode35 = () => {
+          let arr = document.getElementById('input35a').value.split(",");
+          arr = arr.map(Number);
+          let target = document.getElementById('input35b').value;
+          target = Number(target);
+          document.getElementById('ans35').innerHTML = searchInsert(arr, target);
+        }
+      </script>
       <h1>Practice Playground</h1>
-      <h3>Practice: binary search
-      </h3>
+      <!-- Practice: binary search -->
+      <h3>Practice: binary search</h3>
       <p>
         <label for="">array:</label>
         <input type="text" id="practice-binary-search-a" value="2,5,8,12,15,17,19,20,22,35,40,44,45,55,60,66,68,71,73,75,77,80,83,86,89,90">
@@ -185,8 +277,16 @@
         <span id="practice-binary-search-answer"></span>
       </p>
       <hr>
-      <h3>Practice: intersection
-      </h3>
+      <script src="./practice-binary-search.js"></script>
+      <script>
+        const practiceBinarySearch = () => {
+          let arr = document.getElementById("practice-binary-search-a").value.trim().split(",");
+          let num = document.getElementById("practice-binary-search-b").value;
+          document.getElementById('practice-binary-search-answer').innerHTML = "the number: " + num + " position is: " + binarySearch(arr, num);
+        }
+      </script>
+      <!-- Practice: intersection -->
+      <h3>Practice: intersection</h3>
       <p>
         <input type="text" id="practice-intersection-a" value="1,3,4,23,35">
         <input type="text" id="practice-intersection-b" value="4,23,57,70,90">
@@ -196,8 +296,16 @@
         <span id="practice-intersection-answer"></span>
       </p>
       <hr>
-      <h3>Practice: same frequency
-      </h3>
+      <script src="./practice-intersection.js"></script>
+      <script>
+        const practiceIntersection = () => {
+          let arr1 = document.getElementById("practice-intersection-a").value.trim().split(",");
+          let arr2 = document.getElementById("practice-intersection-b").value.trim().split(",");
+          document.getElementById('practice-intersection-answer').innerHTML = intersection(arr1, arr2);
+        }
+      </script>
+      <!-- Practice: same frequency -->
+      <h3>Practice: same frequency</h3>
       <p>
         <input type="text" id="practice-same-frequency-a" value="aabc">
         <input type="text" id="practice-same-frequency-b" value="abbc">
@@ -207,6 +315,15 @@
         <span id="practice-same-frequency-answer"></span>
       </p>
       <hr>
+      <script src="./practice-same-frequency.js"></script>
+      <script>
+        const practiceSameFrequency = () => {
+          let str1 = document.getElementById("practice-same-frequency-a").value;
+          let str2 = document.getElementById("practice-same-frequency-b").value;
+          document.getElementById('practice-same-frequency-answer').innerHTML = sameFrequency(str1, str2);
+        }
+      </script>
+      <!-- Practice: Average Pair -->
       <h3>Practice: Average Pair</h3>
       <p>
         <label for="">Array</label><input type="text" id="practice-average-pair-a" value="-11,0,1,2,3,9,14,17,21">
@@ -217,6 +334,17 @@
         <span id="practice-average-pair-answer"></span>
       </p>
       <hr>
+      <script src="./practice-average-pair.js"></script>
+      <script>
+        const practiceAveragePair = () => {
+          let arr = document.getElementById("practice-average-pair-a").value.trim().split(",");
+          arr = arr.map(Number);
+          let num = document.getElementById("practice-average-pair-b").value;
+          num = Number(num);
+          document.getElementById('practice-average-pair-answer').innerHTML = averagePair(arr, num);
+        }
+      </script>
+      <!-- Practice: Palindrome -->
       <h3>Practice: Palindrome</h3>
       <p>
         <label for="">string</label><input type="text" id="practice-palindrome-a" value="tacocat">
@@ -226,6 +354,14 @@
         <span id="practice-palindrome-answer"></span>
       </p>
       <hr>
+      <script src="./practice-palindrome.js"></script>
+      <script>
+        const practicePalindrome = () => {
+          let str = document.getElementById("practice-palindrome-a").value;
+          document.getElementById('practice-palindrome-answer').innerHTML = isPalindromeString(str);
+        }
+      </script>
+      <!-- Practice: subsequence -->
       <h3>Practice: subsequence</h3>
       <p>
         <label for="">string</label><input type="text" id="practice-subsequence-a" value="hello">
@@ -236,6 +372,15 @@
         <span id="practice-subsequence-answer"></span>
       </p>
       <hr>
+      <script src="./practice-subsequence.js"></script>
+      <script>
+        const practiceSubsequence = () => {
+          let str1 = document.getElementById("practice-subsequence-a").value;
+          let str2 = document.getElementById("practice-subsequence-b").value;
+          document.getElementById("practice-subsequence-answer").innerHTML = isSubsequence(str1, str2);
+        }
+      </script>
+      <!-- Practice: Max and Min Sum -->
       <h3>Practice: Max and Min Sum</h3>
       <p>
         <label for="">array</label><input type="text" id="practice-max-and-min-sum-a" value="2,7,3,0,6,1,-5,-12,-11">
@@ -261,120 +406,45 @@
           }
         }
       </script>
+      <!-- Practice: min subarray length -->
+      <h3>Practice: Min Subarray</h3>
+      <p>
+        <label for="">array</label><input type="text" id="practice-min-subarray-a" value="8,1,6,15,3,16,5,7,14,30,12">
+        <label for="">sum
+        </label><input type="text" id="practice-min-subarray-b" value="60">
+        <button onclick="practiceMinSubarrayLength('max')">Run Code</button>
+      </p>
+      <p>Output:
+        <span id="practice-min-subarray-answer"></span>
+      </p>
+      <hr>
+      <script src="./practice-min-subarray.js"></script>
+      <script>
+        const practiceMinSubarrayLength = () => {
+          let arr = document.getElementById("practice-min-subarray-a").value.split(",");
+          arr = arr.map(Number);
+          let sum = document.getElementById("practice-min-subarray-b").value;
+          sum = Number(sum);
+          document.getElementById("practice-min-subarray-answer").innerHTML = minSubArray(arr, sum);
+        }
+      </script>
+      <!-- Practice: Unique Letters String -->
+      <h3>Practice: Unique Letters String</h3>
+      <p>
+        <label for="">string</label><input type="text" id="practice-unique-letters-string-a" value="thisishowwedoit">
+        <button onclick="practiceUniqueLettersString()">Run Code</button>
+      </p>
+      <p>Output:
+        <span id="practice-unique-letters-string-answer"></span>
+      </p>
+      <hr>
+      <script src="./practice-unique-letters-string.js"></script>
+      <script>
+        const practiceUniqueLettersString = () => {
+          let str = document.getElementById("practice-unique-letters-string-a").value;
+          document.getElementById("practice-unique-letters-string-answer").innerHTML = uniqueLettersString(str);
+        }
+      </script>
     </div>
-
-    <script src="./7-reverse-integer.js"></script>
-    <script>
-      const leetcode7 = () => {
-        const input1 = document.getElementById('input7').value;
-        const ans = document.getElementById('ans7');
-        ans.innerHTML = reverseInteger(val);
-      }
-    </script>
-    <script src="./9-palindrome-number.js"></script>
-    <script>
-      const leetcode9 = () => {
-        let input1 = document.getElementById('input9').value;
-        input1 = Number(input1);
-        const ans = document.getElementById('ans9');
-        ans.innerHTML = isPalindrome(input1);
-      }
-    </script>
-    <script src="./13-roman-to-integer.js"></script>
-    <script>
-      const leetcode13 = (solution) => {
-        let val = document.getElementById('input13').value;
-        document.getElementById('ans13').innerHTML = romanToInt(val);
-      }
-    </script>
-    <script src="./14-longest-common-prefix.js"></script>
-    <script>
-      const leetcode14 = () => {
-        let val = document.getElementById('input14').value;
-        document.getElementById('ans14').innerHTML = longestCommonPrefix(val.replace(/ /g, "").split(','));
-      }
-    </script>
-    <script src="./21-merge-two-sorted-lists.js"></script>
-    <script>
-      const leetcode21 = () => {
-        let input1 = document.getElementById('input21a').value;
-        let arr1 = input1.split(",").map(Number);
-        let input2 = document.getElementById('input21b').value;
-        let arr2 = input2.split(",").map(Number);
-        document.getElementById('ans21').innerHTML = mergeTwoLists(arr1, arr2);
-      }
-    </script>
-    <script src="./26-remove-duplicates-from-sorted-array.js"></script>
-    <script>
-      const leetcode26 = () => {
-        let val = document.getElementById('input26').value;
-        document.getElementById('ans26').innerHTML = removeDuplicates(val);
-      }
-    </script>
-    <script src="./27-remove-element.js"></script>
-    <script>
-      const leetcode27 = () => {
-        let nums = document.getElementById('input27a').value.trim().split(",");
-        let val = document.getElementById('input27b').value;
-        document.getElementById('ans27').innerHTML = removeElement(nums, val);
-      }
-    </script>
-    <script src="./28-implement-strstr.js"></script>
-    <script>
-      const leetcode28 = () => {
-        let haystack = document.getElementById('input28a').value;
-        let needle = document.getElementById('input28b').value;
-        document.getElementById('ans28').innerHTML = removeElement(haystack, needle);
-      }
-    </script>
-    <script src="./practice-binary-search.js"></script>
-    <script>
-      const practiceBinarySearch = () => {
-        let arr = document.getElementById("practice-binary-search-a").value.trim().split(",");
-        let num = document.getElementById("practice-binary-search-b").value;
-        document.getElementById('practice-binary-search-answer').innerHTML = "the number: " + num + " position is: " + binarySearch(arr, num);
-      }
-    </script>
-    <script src="./practice-intersection.js"></script>
-    <script>
-      const practiceIntersection = () => {
-        let arr1 = document.getElementById("practice-intersection-a").value.trim().split(",");
-        let arr2 = document.getElementById("practice-intersection-b").value.trim().split(",");
-        document.getElementById('practice-intersection-answer').innerHTML = intersection(arr1, arr2);
-      }
-    </script>
-    <script src="./practice-same-frequency.js"></script>
-    <script>
-      const practiceSameFrequency = () => {
-        let str1 = document.getElementById("practice-same-frequency-a").value;
-        let str2 = document.getElementById("practice-same-frequency-b").value;
-        document.getElementById('practice-same-frequency-answer').innerHTML = sameFrequency(str1, str2);
-      }
-    </script>
-    <script src="./practice-average-pair.js"></script>
-    <script>
-      const practiceAveragePair = () => {
-        let arr = document.getElementById("practice-average-pair-a").value.trim().split(",");
-        arr = arr.map(Number);
-        let num = document.getElementById("practice-average-pair-b").value;
-        num = Number(num);
-        document.getElementById('practice-average-pair-answer').innerHTML = averagePair(arr, num);
-      }
-    </script>
-    <script src="./practice-palindrome.js"></script>
-    <script>
-      const practicePalindrome = () => {
-        let str = document.getElementById("practice-palindrome-a").value;
-        document.getElementById('practice-palindrome-answer').innerHTML = isPalindromeString(str);
-      }
-    </script>
-    <script src="./practice-subsequence.js"></script>
-    <script>
-      const practiceSubsequence = () => {
-        let str1 = document.getElementById("practice-subsequence-a").value;
-        let str2 = document.getElementById("practice-subsequence-b").value;
-        document.getElementById("practice-subsequence-answer").innerHTML = isSubsequence(str1, str2);
-      }
-    </script>
   </body>
-</html></body></html>
+</html>

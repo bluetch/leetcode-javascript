@@ -42,6 +42,7 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 | 23  | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                     |             [JavaScript](./algorithms/23-merge-k-sorted-lists.js)              | Hard       |
 | 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                       |      [JavaScript](./algorithms/26-remove-duplicates-from-sorted-array.js)      | Easy       |
 | 27  | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 |                [JavaScript](./algorithms/27-remove-element.js)                 | Easy       |
+| 35  | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)                                                 |            [JavaScript](./algorithms/35-search-insert-position.js)             | Easy       |
 
 ## Reference
 
