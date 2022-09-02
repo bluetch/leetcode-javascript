@@ -39,6 +39,7 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 | 19  | [Remove Nth Node From End of List](https://leetcode.com/problems/3sum/)                                                         |                     [JavaScript](./algorithms/15-3sum.js)                      | Medium     |
 | 20  | [Valid Parenttheses](https://leetcode.com/problems/valid-parentheses/)                                                          |               [JavaScript](./algorithms/20-valid-parentheses.js)               | Easy       |
 | 21  | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)                                                 |            [JavaScript](./algorithms/21-merge-two-sorted-lists.js)             | Easy       |
+| 23  | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                     |             [JavaScript](./algorithms/23-merge-k-sorted-lists.js)              | Hard       |
 | 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                       |      [JavaScript](./algorithms/26-remove-duplicates-from-sorted-array.js)      | Easy       |
 | 27  | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 |                [JavaScript](./algorithms/27-remove-element.js)                 | Easy       |
 
