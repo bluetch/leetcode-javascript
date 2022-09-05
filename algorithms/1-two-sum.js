@@ -1,6 +1,7 @@
 /**
  * Problem: https://leetcode.com/problems/two-sum/
  * Difficulty: Easy
+ * Solution: https://www.nileshblog.tech/2022/08/leet-code-two-sum-problem-solution-java-cpp-javascript-python/
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
@@ -39,6 +40,23 @@ const twoSum = (nums, target) => {
 // storage = {
 //   "7": 0,
 // }
+
+
+// Solution 3:
+// function twoSum(nums, target) {
+//   let vals = {};
+
+//   for (let i = 0; i < nums.length; i++) {
+//     if (target - nums[i] in vals) {
+
+//       return [vals[target - nums[i]], i];
+//     }
+//     else {
+//       vals[nums[i]] = i;
+//     }
+//   }
+//   return [];
+// };
 
 
 // Object.keys (ES5)
