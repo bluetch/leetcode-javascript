@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px auto;
+  width: 500px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 5px 10px 5px;
+}
+
+.label {
+  cursor: pointer;
+}
