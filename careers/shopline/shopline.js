@@ -73,7 +73,7 @@ function minimalOperations(words) {
       }
       i++;
     }
-    arr[pointer] = c;
+    arr[pointer] = count;
     pointer++;
     count = 0;
     i = 0;
