@@ -5,10 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pic Collage</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
   </head>
   <body>
-
+    <canvas></canvas>
     <script>
+      // canvas
+      const canvas = document.querySelector("canvas");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      let c = canvas.getContext("2d");
+      // fillRect(x, y, width, height); 畫出一個填滿的矩形。
+      // strokeRect(x, y, width, height); 畫出一個矩形的邊框
+      // clearRect(x, y, width, height); 清除指定矩形區域內的內容，使其變為全透明。
+      c.fillStyle = "rgba(255,0,0,0.5)";
+      c.fillRect(100, 100, 100, 100);
+      c.fillStyle = "rgba(0,255,0,0.5)";
+      c.fillRect(400, 100, 100, 100);
+      c.fillStyle = "rgba(0,0,255,0.5)";
+      c.fillRect(200, 400, 100, 100);
+
+      // Line
+      c.beginPath();
+      c.moveTo(50, 300);
+      c.lineTo(300, 100);
+      c.lineTo(400, 300);
+      c.strokeStyle = "#fa34a3";
+      c.stroke();
+
+      // arc = circle 弧形
+      // arc(x, y, radius, startAngle, endAngle, anticlockwise);
+      c.beginPath();
+      c.arc(300, 300, 30, 0, Math.PI * 2, false);
+      c.stroke();
+
+
       // 2019
       function getFullname() {
         return this.fullname;
