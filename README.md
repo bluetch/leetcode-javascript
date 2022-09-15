@@ -45,6 +45,8 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 |  33  | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)                                 |        [JavaScript](./algorithms/33-search-in-rorated-sorted-array.js)         | Medium     |
 |  35  | [Search Insert Position](https://leetcode.com/problems/search-insert-position/)                                                 |            [JavaScript](./algorithms/35-search-insert-position.js)             | Easy       |
 |  48  | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                                     |                 [JavaScript](./algorithms/48-rotate-image.js)                  | Medium     |
+| 349  | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                                         |          [JavaScript](./algorithms/349-intersection-of-two-arrays.js)          | Easy       |
+| 412  | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)                                                                           |                  [JavaScript](./algorithms/412-fizz-buzz.js)                   | Easy       |
 | 1189 | [Maximum Number of Balloos](https://leetcode.com/problems/maximum-number-of-balloons/)                                          |         [JavaScript](./algorithms/1189-maximum-number-of-balloons.js)          | Easy       |
 
 ## Reference
