@@ -47,6 +47,7 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 |  48  | [Rotate Image](https://leetcode.com/problems/rotate-image/)                                                                     |                 [JavaScript](./algorithms/48-rotate-image.js)                  | Medium     |
 | 349  | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)                                         |          [JavaScript](./algorithms/349-intersection-of-two-arrays.js)          | Easy       |
 | 412  | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)                                                                           |                  [JavaScript](./algorithms/412-fizz-buzz.js)                   | Easy       |
+| 509  | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)                                                             |               [JavaScript](./algorithms/509-fibonacci-number.js)               | Easy       |
 | 1189 | [Maximum Number of Balloos](https://leetcode.com/problems/maximum-number-of-balloons/)                                          |         [JavaScript](./algorithms/1189-maximum-number-of-balloons.js)          | Easy       |
 
 ## Reference
