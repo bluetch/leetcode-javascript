@@ -6,9 +6,10 @@
  * @return {string[]}
  */
 
+//  O(n)
 const fizzBuzz = (n) => {
   let arr = [];
-
+  
   for (let i = 1; i <= n; i++) {
     let str = '';
     if (i % 3 === 0) {
