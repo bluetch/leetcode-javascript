@@ -49,6 +49,7 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 | 412  | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/)                                                                           |                  [JavaScript](./algorithms/412-fizz-buzz.js)                   | Easy       |
 | 509  | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)                                                             |               [JavaScript](./algorithms/509-fibonacci-number.js)               | Easy       |
 | 1189 | [Maximum Number of Balloos](https://leetcode.com/problems/maximum-number-of-balloons/)                                          |         [JavaScript](./algorithms/1189-maximum-number-of-balloons.js)          | Easy       |
+| 2215 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)                           |      [JavaScript](./algorithms/2215-find-the-difference-of-two-arrays.js)      | Easy       |
 
 ## Reference
 

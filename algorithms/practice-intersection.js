@@ -42,3 +42,12 @@ const intersection = (arr1, arr2) => {
   console.log(result);
   return result;
 }
+
+/* 求差集 */
+
+// const difference = (arr1, arr2) =>{
+//   let seta = new Set(arr1);
+//   let setb = new Set(arr2);
+//   let difference = Array.from(new Set(arr1.concat(arr2).filter(v=>!seta.has(v) || setb.has(v))));
+
+// }
