@@ -7,3 +7,5 @@
 const lengthOfLastWord = (s) => {
   return s.trim().split(' ').at(-1).length;
 };
+
+// array.at() 2021年1月的第3阶段
