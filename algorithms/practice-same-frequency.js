@@ -5,7 +5,7 @@ Order doesn't matter.
 Ex:
   sameFrequency("abbc", "aabc") false
   sameFrequency("abba", "abab") true
-sameFrequency("aasdebasdf", "adfeebed") false
+  sameFrequency("aasdebasdf", "adfeebed") false
 */
 
 

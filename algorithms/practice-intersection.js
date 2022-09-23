@@ -20,7 +20,7 @@ const intersection = (arr1, arr2) => {
   // console.log(answer);
   // return answer;
 
-  // Counter algorithms
+  // Counter algorithms: BigO (n+m)
   let result = [];
   let arr3 = arr1.concat(arr2);
   let counter = {};

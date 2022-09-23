@@ -29,4 +29,7 @@ const binarySearch = (arr, num) => {
 
 binarySearch(arr, 12);
 
-// Math.floor() 函式會回傳小於等於所給數字的最大整數。
+// Math.abs(值):回傳絕對值
+// Math.ceil(值):回傳比值大中，最接近的整數
+// Math.floor(值):回傳比值大中，最接近的整數
+// Math.round(值):回傳四捨五入的數
