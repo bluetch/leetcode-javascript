@@ -5,25 +5,21 @@
   The number pair is -11 and 14, 0 and 3, 1 and 2.
 */
 
+const arr = [-11, 0, 1, 2, 3, 9, 14, 17, 21];
+
 const averagePair = (arr, avg) => {
   // O(n^2)
-  // let count = 0;
+  
   // let result = [];
-  // for (let i = 0; i < arr.length - 1; i++) {
-  //   for (let j = i + 1; j < arr.length; j++) {
-  //     count++;
-  //     console.log(arr[i], arr[j], (arr[i] + arr[j]) / 2, avg, (arr[i] + arr[j] / 2 == avg));
-  //     if ((arr[i] + arr[j]) / 2 == avg) {
+  // for(let i = 0; i < arr.length -1; i++){
+  //   for(let j = i+1; j < arr.length ; j++){
+  //     if((arr[i] + arr[j])/2 === avg){
   //       result.push([arr[i], arr[j]]);
   //     }
   //   }
   // }
-  // console.log("count: " + count);
-  // console.log(result);
-  // return result;
 
-  // pointer
-  // O(n)
+  // pointer: O(n)
   let left = 0, right = arr.length - 1, result = [];
   while (right > left) {
     let temp_avg = (arr[right] + arr[left]) / 2;
@@ -40,3 +36,5 @@ const averagePair = (arr, avg) => {
   console.log(result);
   return result;
 }
+
+averagePair(arr, 1.5);

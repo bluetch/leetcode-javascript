@@ -42,3 +42,7 @@ const sameFrequency = (str1, str2) => {
   }
   return true;
 }
+
+console.log(sameFrequency("abbc", "aabc"));
+console.log(sameFrequency("abba", "abab"));
+console.log(sameFrequency("aasdebasdf", "adfeebed"));
