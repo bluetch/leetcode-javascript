@@ -10,10 +10,14 @@ EX:
 */
 
 const isSubsequence = (str1, str2) => {
+  // if there is no string, return
   if (str1.length == 0) return true;
+  // create two pointer
   let pointer1 = 0, pointer2 = 0;
 
+  // detect pointer2 is not larger then str2
   while (pointer2 < str2.length) {
+    // if pointer1 equal to pointer2, move pointer1 forward
     if (str1[pointer1] == str2[pointer2]) {
       pointer1++;
     }
