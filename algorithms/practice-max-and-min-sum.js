@@ -5,6 +5,9 @@ Ex:
   maxSum([2,7,3,0,6,1,-5,-12,-11],3);
   minSum([2,7,3,0,6,1,-5,-12,-11],3);
 */
+
+const arr = [2, 7, 3, 0, 6, 1, -5, -12, -11];
+
 const maxSum = (arr, size) => {
   // let max_value = -Infinity;
 
@@ -56,3 +59,20 @@ const minSum = (arr, size) => {
   console.log(min_value);
   return min_value;
 }
+
+
+const maxSum2 = (arr, size) => {
+
+  if (size > arr.length) return null;
+
+  for (let i = 0; i <= arr.length - size; i++) {
+    let max_value = 0;
+    for (let j = i; j < i + size; j++) {
+      max_value+=arr[j];
+      console.log(arr[i], arr[j]);
+    }
+    console.log("max_value", max_value);
+  }
+}
+
+maxSum2(arr, 3);
