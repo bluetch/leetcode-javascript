@@ -65,3 +65,4 @@ My JavaScript solution for [LeetCode](https://leetcode.com/) problems
 - [資料節構與演算法 JS (Udemy)](https://www.udemy.com/course/algorithm-data-structure/)
 - [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/course/master-the-coding-interview-data-structures-algorithms/)
 - [彭彭的課程](https://www.youtube.com/c/%E5%BD%AD%E5%BD%AD%E7%9A%84%E8%AA%B2%E7%A8%8B)
+- [小洋说转行程序员](https://www.youtube.com/channel/UC3KBfGtep7m6_Wyx8Jjmj_A)
